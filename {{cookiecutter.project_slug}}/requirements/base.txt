@@ -12,13 +12,13 @@ django==1.10.5
 # Configuration
 django-environ==0.4.1
 {% if cookiecutter.use_whitenoise == 'y' -%}
-whitenoise==3.2.3
+whitenoise==3.3.0
 {%- endif %}
 
 
 # Forms
 django-foundation-formtags==0.0.6
-django-braces==1.10.0
+django-braces==1.11.0
 
 # Models
 django-model-utils==2.6.1
@@ -53,7 +53,7 @@ celery==3.1.24
 {% endif %}
 
 rcssmin==1.0.6 {% if cookiecutter.windows == "y" %}--install-option="--without-c-extensions"{% endif %}
-django-compressor==2.1
+django-compressor==2.1.1
 django-libsass==0.7
 
 # Your custom requirements go here

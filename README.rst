@@ -52,6 +52,7 @@ Features
 * 12-Factor_ based settings via django-environ_
 * Compile Sass files using libsass via django-libsass_.
 * `Django Foundation Formtags`_ to work with Zurb Foundation forms
+* Secure by default. We believe in SSL.
 * Optimized development and production settings
 * Registration via django-allauth_
 * Comes with custom user model ready to go
