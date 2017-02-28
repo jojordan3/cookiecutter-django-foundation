@@ -205,8 +205,8 @@ file under ``<project_slug>/static/sass``.
 Every component includes a set of variables that modify core structural or visual styles. If there's something you can't
 customize with a variable, you can just write your own CSS to add it.
 
-Here's an example set of settings variables. These change the default styling of buttons:
 
+Here's an example set of settings variables. These change the default styling of buttons:
 
 .. code:: sass
 
