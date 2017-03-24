@@ -248,6 +248,31 @@ Here's an example set of settings variables. These change the default styling of
     // Default opacity for a disabled button.
     $button-opacity-disabled: 0.25 !default;
 
+Support This Project
+------------
+
+Two Scoops Press
+~~~~~~~~~~~~~~~~~~
+
+.. image:: https://cdn.shopify.com/s/files/1/0304/6901/t/2/assets/logo.png?11985289740589874793
+   :name: Two Scoops Press
+   :align: center
+   :alt: Two Scoops Press
+   :target: https://twoscoopspress.com
+
+Two Scoops Press brings you the best dairy-themed Django references in the universe
+
+pyup
+~~~~~~~~~~~~~~~~~~
+
+.. image:: https://pyup.io/static/images/logo.png
+   :name: pyup
+   :align: center
+   :alt: pyup
+   :target: https://pyup.io/
+
+Pyup brings you automated security and dependency updates used by Google and other organizations. Free for open source projects!
+
 Contributing
 ------------
 
