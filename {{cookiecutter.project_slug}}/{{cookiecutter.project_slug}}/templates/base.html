@@ -45,16 +45,20 @@
           <li><a href="{% url 'about' %}">About</a></li>
           {% if request.user.is_authenticated %}
             <li>
+              {# URL provided by django-allauth/account/urls.py #}
               <a href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a>
             </li>
             <li>
+              {# URL provided by django-allauth/account/urls.py #}
               <a href="{% url 'account_logout' %}">{% trans "Sign out" %}</a>
             </li>
             {% else %}
             <li>
+              {# URL provided by django-allauth/account/urls.py #}
               <a id="sign-up-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
             </li>
             <li>
+              {# URL provided by django-allauth/account/urls.py #}
               <a id="log-in-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
             </li>
             {% endif %}

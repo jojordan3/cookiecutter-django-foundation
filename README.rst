@@ -103,7 +103,7 @@ Constraints
 
 * Only maintained 3rd party libraries are used.
 * Uses PostgreSQL everywhere (9.2+)
-* Environment variables for configuration (This won't work with Apache/mod_wsgi).
+* Environment variables for configuration (This won't work with Apache/mod_wsgi except on AWS ELB).
 
 
 Usage
