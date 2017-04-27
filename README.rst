@@ -47,6 +47,7 @@ Features
 ---------
 
 * For Django 1.10
+* Works with Python 3.4.x or 3.5.x. Python 3.6 is experimental
 * Renders Django projects with 100% starting test coverage
 * `Zurb Foundation`_ 6 with an option to customize using SASS variables (100% SASS).
 * 12-Factor_ based settings via django-environ_
@@ -62,7 +63,6 @@ Features
 * Docker support using docker-compose_ for development and production
 * Procfile_ for deploying to Heroku
 * Instructions for deploying to PythonAnywhere_
-* Works with Python 2.7.x or 3.5.x
 * Run tests with unittest or py.test
 * Customizable PostgreSQL version
 * Experimental support for Amazon Elastic Beanstalk
@@ -148,7 +148,6 @@ Answer the prompts with your own desired options_. For example::
     use_opbeat [n]: y
     use_pycharm [n]: y
     windows [n]: n
-    use_python3 [y]: y
     use_docker [y]: n
     use_heroku [n]: y
     Select postgresql_version:
@@ -251,16 +250,16 @@ Here's an example set of settings variables. These change the default styling of
 Support This Project
 ------------
 
-Two Scoops Press
-~~~~~~~~~~~~~~~~~~
+Two Scoops of Django 1.11
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://cdn.shopify.com/s/files/1/0304/6901/t/2/assets/logo.png?11985289740589874793
-   :name: Two Scoops Press
+.. image:: https://cdn.shopify.com/s/files/1/0304/6901/files/tsd-111-alpha-470x235.jpg?2934688328290951771
+   :name: Two Scoops of Django 1.11 Cover
    :align: center
-   :alt: Two Scoops Press
-   :target: https://twoscoopspress.com
+   :alt: Two Scoops of Django
+   :target: http://twoscoopspress.org/products/two-scoops-of-django-1-11
 
-Two Scoops Press brings you the best dairy-themed Django references in the universe
+Two Scoops of Django is the best dairy-themed Django reference in the universe
 
 pyup
 ~~~~~~~~~~~~~~~~~~
