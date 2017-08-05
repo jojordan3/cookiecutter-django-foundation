@@ -88,5 +88,5 @@ gulp.task('watch', function() {
 
 // Default task
 gulp.task('default', function() {
-    runSequence(['scripts', 'imgCompression'], 'runServer', 'browserSync', 'watch');
+    runSequence(['scripts', 'imgCompression'], ['runServer', 'browserSync', 'watch']);
 });
