@@ -32,7 +32,9 @@ For more information about `Cookiecutter Django`_
 
 * Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 * See Troubleshooting_ for common errors and obstacles
-* If you have problems with Cookiecutter Django, please open issues_ before sending emails to the maintainers. You will get a much, MUCH faster response.
+* If you have problems with Cookiecutter Django, please open issues_ don't send emails to the maintainers.
+* Need quick professional paid support? Contact `support@cookiecutter.io`_. This includes configuring your servers,
+fixing bugs, reviewing your code and everything in between.
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 
@@ -40,6 +42,7 @@ For more information about `Cookiecutter Django`_
 
 .. _528: https://github.com/pydanny/cookiecutter-django/issues/528#issuecomment-212650373
 .. _issues: https://github.com/pydanny/cookiecutter-django/issues/new
+.. _support@cookiecutter.io: support@cookiecutter.io
 
 .. _Cookiecutter Django: https://github.com/pydanny/cookiecutter-django
 
@@ -60,7 +63,7 @@ Features
 * Grunt build for compass and livereload
 * Send emails via Anymail_ (using Mailgun_ by default, but switchable)
 * Media storage using Amazon S3
-* Docker support using docker-compose_ for development and production
+* Docker support using docker-compose_ for development and production (using _Caddy with LetsEncrypt support)
 * Procfile_ for deploying to Heroku
 * Instructions for deploying to PythonAnywhere_
 * Run tests with unittest or py.test
@@ -96,7 +99,7 @@ Optional Integrations
 .. _docker-compose: https://github.com/docker/compose
 .. _Opbeat: https://opbeat.com/
 .. _PythonAnywhere: https://www.pythonanywhere.com/
-
+.. _Caddy: https://caddyserver.com/
 
 Constraints
 -----------
@@ -190,8 +193,7 @@ Answer the prompts with your own desired options_. For example::
     1 - Gulp
     2 - Grunt
     3 - None
-    Choose from 1, 2, 3 [1]: 1
-    use_lets_encrypt [n]: n
+    Choose from 1, 2, 3, 4 [1]: 1
     Select open_source_license:
     1 - MIT
     2 - BSD
