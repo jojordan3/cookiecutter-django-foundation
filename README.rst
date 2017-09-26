@@ -32,9 +32,11 @@ For more information about `Cookiecutter Django`_
 
 * Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 * See Troubleshooting_ for common errors and obstacles
-* If you have problems with Cookiecutter Django, please open issues_ don't send emails to the maintainers.
-* Need quick professional paid support? Contact `support@cookiecutter.io`_. This includes configuring your servers,
-fixing bugs, reviewing your code and everything in between.
+* If you have problems with Cookiecutter Django, please open issues_ don't send
+  emails to the maintainers.
+* Need quick professional paid support? Contact `support@cookiecutter.io`_.
+  This includes configuring your servers, fixing bugs, reviewing your code and
+  everything in between.
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 
