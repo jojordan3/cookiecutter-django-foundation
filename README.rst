@@ -51,8 +51,8 @@ For more information about `Cookiecutter Django`_
 Features
 ---------
 
-* For Django 1.10
-* Works with Python 3.4.x or 3.5.x. Python 3.6 is experimental
+* For Django 1.11
+* Works with Python 3.6
 * Renders Django projects with 100% starting test coverage
 * `Zurb Foundation`_ 6 with an option to customize using SASS variables (100% SASS).
 * 12-Factor_ based settings via django-environ_
