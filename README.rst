@@ -51,7 +51,7 @@ For more information about `Cookiecutter Django`_
 Features
 ---------
 
-* For Django 1.11
+* For Django 2.0
 * Works with Python 3.6
 * Renders Django projects with 100% starting test coverage
 * `Zurb Foundation`_ 6 with an option to customize using SASS variables (100% SASS).
@@ -126,7 +126,7 @@ Two Scoops of Django 1.11
    :name: Two Scoops of Django 1.11 Cover
    :align: center
    :alt: Two Scoops of Django
-   :target: http://twoscoopspress.org/products/two-scoops-of-django-1-11
+   :target: http://twoscoopspress.com/products/two-scoops-of-django-1-11
 
 Two Scoops of Django is the best dessert-themed Django reference in the universe
 
@@ -144,7 +144,7 @@ Pyup brings you automated security and dependency updates used by Google and oth
 Usage
 ------
 
-Let's pretend you want to create a Django project called "redditclone". Rather than using `startproject`
+Let's pretend you want to create a Django project called "redditclone". Rather than using ``startproject``
 and then editing the results to include your name, email, and various configuration issues that always get forgotten until the worst possible moment, get cookiecutter_ to do all the work.
 
 First, get Cookiecutter. Trust me, it's awesome::
@@ -186,12 +186,13 @@ Answer the prompts with your own desired options_. For example::
     use_docker [y]: n
     use_heroku [n]: y
     Select postgresql_version:
-    1 - 10
-    2 - 9.6
-    3 - 9.5
-    4 - 9.4
-    5 - 9.3
-    6 - 9.2
+    1 - 10.3
+    2 - 10.2
+    3 - 10.1
+    4 - 9.6
+    5 - 9.5
+    6 - 9.4
+    7 - 9.3
     Choose from 1, 2, 3, 4 [1]: 1
     Select js_task_runner:
     1 - Gulp
@@ -205,6 +206,7 @@ Answer the prompts with your own desired options_. For example::
     4 - Apache Software License 2.0
     5 - Not open source
     Choose from 1, 2, 3, 4, 5 [1]: 1
+    keep_local_envs_in_vcs [y]: y
 
 Enter the project and take a look around::
 
