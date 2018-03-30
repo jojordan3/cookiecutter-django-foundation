@@ -70,10 +70,10 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     'foundation_formtags',  # Form layouts
-
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'rest_framework',
 ]
 LOCAL_APPS = [
     '{{ cookiecutter.project_slug }}.users.apps.UsersConfig',
