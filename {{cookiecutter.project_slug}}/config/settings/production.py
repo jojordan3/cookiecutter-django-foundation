@@ -1,5 +1,7 @@
+{% if cookiecutter.use_sentry == 'y' -%}
 import logging
 
+{% endif -%}
 from .base import *  # noqa
 from .base import env
 
@@ -21,7 +23,7 @@ DATABASES['default']['CONN_MAX_AGE'] = env.int('CONN_MAX_AGE', default=60)  # no
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': f'{env("REDIS_URL", default="redis://127.0.0.1:6379")}/{0}',
+        'LOCATION': env('REDIS_URL'),
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
             # Mimicing memcache behavior.
@@ -87,7 +89,7 @@ AWS_S3_OBJECT_PARAMETERS = {
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 {%- else %}
 STATICFILES_STORAGE = 'config.settings.production.StaticRootS3BotoStorage'
-STATIC_URL = 'https://s3.amazonaws.com/%s/static/' % AWS_STORAGE_BUCKET_NAME
+STATIC_URL = f'https://s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/static/'
 {%- endif %}
 
 # MEDIA
@@ -97,7 +99,7 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 MEDIA_URL = f'https://s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/'
 {%- else %}
 # region http://stackoverflow.com/questions/10390244/
-from storages.backends.s3boto3 import S3Boto3Storage
+from storages.backends.s3boto3 import S3Boto3Storage  # noqa E402
 StaticRootS3BotoStorage = lambda: S3Boto3Storage(location='static')  # noqa
 MediaRootS3BotoStorage = lambda: S3Boto3Storage(location='media', file_overwrite=False)  # noqa
 # endregion
@@ -156,7 +158,7 @@ INSTALLED_APPS += ['gunicorn']  # noqa F405
 # http://whitenoise.evans.io/en/latest/django.html#enable-whitenoise
 MIDDLEWARE = ['whitenoise.middleware.WhiteNoiseMiddleware'] + MIDDLEWARE  # noqa F405
 
-{%- endif %}
+{% endif %}
 
 # django-compressor
 # ------------------------------------------------------------------------------
@@ -167,15 +169,16 @@ COMPRESS_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # https://django-compressor.readthedocs.io/en/latest/settings/#django.conf.settings.COMPRESS_URL
 COMPRESS_URL = STATIC_URL # noqa F405
 
-{% if cookiecutter.use_whitenoise == 'n' -%}
+{%- if cookiecutter.use_whitenoise == 'n' -%}
+
 # Collectfast
 # ------------------------------------------------------------------------------
 # https://github.com/antonagestam/collectfast#installation
 INSTALLED_APPS = ['collectfast'] + INSTALLED_APPS  # noqa F405
 AWS_PRELOAD_METADATA = True
 
-{%- endif %}
-{% if cookiecutter.use_sentry_for_error_reporting == 'y' -%}
+{% endif %}
+{%- if cookiecutter.use_sentry == 'y' -%}
 # raven
 # ------------------------------------------------------------------------------
 # https://docs.sentry.io/clients/python/integrations/django/
@@ -236,16 +239,16 @@ LOGGING = {
 
 SENTRY_CELERY_LOGLEVEL = env.int('DJANGO_SENTRY_LOG_LEVEL', logging.INFO)
 RAVEN_CONFIG = {
-    'CELERY_LOGLEVEL': env.int('DJANGO_SENTRY_LOG_LEVEL', logging.INFO),
-    'DSN': SENTRY_DSN
+    'dsn': SENTRY_DSN
 }
+
 {%- else %}
 # LOGGING
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#logging
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
-# the site admins bon every HTTP 500 error when DEBUG=False.
+# the site admins on every HTTP 500 error when DEBUG=False.
 # See https://docs.djangoproject.com/en/dev/topics/logging for
 # more details on how to customize your logging configuration.
 LOGGING = {
@@ -288,6 +291,6 @@ LOGGING = {
     }
 }
 
-{%- endif %}
+{% endif %}
 # Your stuff...
 # ------------------------------------------------------------------------------

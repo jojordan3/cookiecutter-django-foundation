@@ -9,6 +9,10 @@ Cookiecutter Django Foundation
      :target: https://pyup.io/repos/github/pydanny/cookiecutter-django/
      :alt: Updates
 
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/ambv/black
+    :alt: Code style: black
+
 Cookiecutter Django Foundation is fork of awesome `Cookiecutter Django`_. Powered by Cookiecutter_, Cookiecutter Django
 is a framework for jumpstarting production-ready Django projects quickly. Cookiecutter Django Foundation uses the `Zurb
 Foundation`_ 6 as the front end framework. This project combines the Cookiecutter Django with the Foundation framework.
@@ -34,9 +38,6 @@ For more information about `Cookiecutter Django`_
 * See Troubleshooting_ for common errors and obstacles
 * If you have problems with Cookiecutter Django, please open issues_ don't send
   emails to the maintainers.
-* Need quick professional paid support? Contact `support@cookiecutter.io`_.
-  This includes configuring your servers, fixing bugs, reviewing your code and
-  everything in between.
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 
@@ -44,7 +45,6 @@ For more information about `Cookiecutter Django`_
 
 .. _528: https://github.com/pydanny/cookiecutter-django/issues/528#issuecomment-212650373
 .. _issues: https://github.com/pydanny/cookiecutter-django/issues/new
-.. _support@cookiecutter.io: support@cookiecutter.io
 
 .. _Cookiecutter Django: https://github.com/pydanny/cookiecutter-django
 
@@ -174,13 +174,13 @@ Answer the prompts with your own desired options_. For example::
     domain_name [example.com]: myreddit.com
     version [0.1.0]: 0.0.1
     timezone [UTC]: America/Los_Angeles
-    use_whitenoise [y]: n
+    use_whitenoise [n]: n
     use_celery [n]: y
     use_mailhog [n]: n
-    use_sentry_for_error_reporting [y]: y
+    use_sentry [n]: y
     use_pycharm [n]: y
     windows [n]: n
-    use_docker [y]: n
+    use_docker [n]: n
     use_heroku [n]: y
     Select postgresql_version:
     1 - 10.3
@@ -204,6 +204,7 @@ Answer the prompts with your own desired options_. For example::
     5 - Not open source
     Choose from 1, 2, 3, 4, 5 [1]: 1
     keep_local_envs_in_vcs [y]: y
+    debug[n]: n
 
 Enter the project and take a look around::
 

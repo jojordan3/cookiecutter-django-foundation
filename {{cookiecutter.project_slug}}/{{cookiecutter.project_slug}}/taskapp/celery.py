@@ -24,7 +24,7 @@ class CeleryConfig(AppConfig):
         installed_apps = [app_config.name for app_config in apps.get_app_configs()]
         app.autodiscover_tasks(lambda: installed_apps, force=True)
 
-        {% if cookiecutter.use_sentry_for_error_reporting == 'y' -%}
+        {% if cookiecutter.use_sentry == 'y' -%}
         if hasattr(settings, 'RAVEN_CONFIG'):
             # Celery signal registration
 {% if cookiecutter.use_pycharm == 'y' -%}
@@ -41,7 +41,7 @@ class CeleryConfig(AppConfig):
             # @formatter:on
 {%- endif %}
 
-            raven_client = RavenClient(dsn=settings.RAVEN_CONFIG['DSN'])
+            raven_client = RavenClient(dsn=settings.RAVEN_CONFIG['dsn'])
             raven_register_logger_signal(raven_client)
             raven_register_signal(raven_client)
         {%- endif %}
