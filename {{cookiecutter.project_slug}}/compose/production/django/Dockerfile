@@ -9,7 +9,7 @@ RUN apk update \
   # Pillow dependencies
   && apk add jpeg-dev zlib-dev freetype-dev lcms2-dev openjpeg-dev tiff-dev tk-dev tcl-dev \
   # CFFI dependencies
-  && apk add libffi-dev openssl-dev py-cffi \
+  && apk add libffi-dev py-cffi \
   # libsass dependencies
   && apk add g++
 
@@ -34,10 +34,16 @@ RUN chown django /start
 COPY ./compose/production/django/celery/worker/start /start-celeryworker
 RUN sed -i 's/\r//' /start-celeryworker
 RUN chmod +x /start-celeryworker
+RUN chown django /start-celeryworker
 
 COPY ./compose/production/django/celery/beat/start /start-celerybeat
 RUN sed -i 's/\r//' /start-celerybeat
 RUN chmod +x /start-celerybeat
+RUN chown django /start-celerybeat
+
+COPY ./compose/production/django/celery/flower/start /start-flower
+RUN sed -i 's/\r//' /start-flower
+RUN chmod +x /start-flower
 {% endif %}
 COPY . /app
 

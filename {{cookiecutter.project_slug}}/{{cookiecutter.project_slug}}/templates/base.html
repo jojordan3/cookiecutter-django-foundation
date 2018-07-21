@@ -17,12 +17,10 @@
     <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
 
     {% block css %}
-
     {% compress css %}
     <link rel="stylesheet" type="text/x-scss" href="{% static 'sass/app.scss' %}">
     <link href="{% static 'css/project.css' %}" rel="stylesheet">
     {% endcompress %}
-
     {% endblock %}
 
   </head>

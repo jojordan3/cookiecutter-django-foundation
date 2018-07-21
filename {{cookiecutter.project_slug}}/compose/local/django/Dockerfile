@@ -9,7 +9,7 @@ RUN apk update \
   # Pillow dependencies
   && apk add jpeg-dev zlib-dev freetype-dev lcms2-dev openjpeg-dev tiff-dev tk-dev tcl-dev \
   # CFFI dependencies
-  && apk add libffi-dev openssl-dev py-cffi \
+  && apk add libffi-dev py-cffi \
   # Translations dependencies
   && apk add gettext \
   # https://docs.djangoproject.com/en/dev/ref/django-admin/#dbshell
@@ -36,6 +36,10 @@ RUN chmod +x /start-celeryworker
 COPY ./compose/local/django/celery/beat/start /start-celerybeat
 RUN sed -i 's/\r//' /start-celerybeat
 RUN chmod +x /start-celerybeat
+
+COPY ./compose/local/django/celery/flower/start /start-flower
+RUN sed -i 's/\r//' /start-flower
+RUN chmod +x /start-flower
 {% endif %}
 WORKDIR /app
 

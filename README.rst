@@ -78,7 +78,7 @@ Optional Integrations
 *These features can be enabled during initial project setup.*
 
 * Serve static files from Amazon S3 or Whitenoise_
-* Configuration for Celery_
+* Configuration for Celery_ and Flower_ (the latter in Docker setup only)
 * Integration with MailHog_ for local email testing
 * Integration with Sentry_ for error logging
 
@@ -93,6 +93,7 @@ Optional Integrations
 .. _Mailgun: http://www.mailgun.com/
 .. _Whitenoise: https://whitenoise.readthedocs.io/
 .. _Celery: http://www.celeryproject.org/
+.. _Flower: https://github.com/mher/flower
 .. _Anymail: https://github.com/anymail/django-anymail
 .. _MailHog: https://github.com/mailhog/MailHog
 .. _Sentry: https://sentry.io/welcome/
@@ -113,7 +114,9 @@ Support this Project!
 
 This project is run by volunteers. Please support them in their efforts to maintain and improve Cookiecutter Django:
 
-* https://www.patreon.com/danielroygreenfeld: Project lead. Expertise in AWS ELB and Django.
+* Daniel Roy Greenfeld, Project Lead (`GitHub <https://github.com/pydanny>`_, `Patreon <https://www.patreon.com/danielroygreenfeld>`_): expertise in Django and AWS ELB.
+
+* Nikita Shupeyko, Core Developer (`GitHub <https://github.com/webyneter>`_): expertise in Python/Django, hands-on DevOps and frontend experience.
 
 Projects that provide financial support to the maintainers:
 
