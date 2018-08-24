@@ -89,6 +89,7 @@ Listed in alphabetical order.
   Delio Castillo           `@jangeador`_                 @jangeador
   Denis Orehovsky          `@apirobot`_
   Dónal Adams              `@epileptic-fish`_
+  Diane Chen               `@purplediane`_               @purplediane88
   Dong Huynh               `@trungdong`_
   Emanuel Calso            `@bloodpet`_                  @bloodpet
   Eraldo Energy            `@eraldo`_
@@ -105,6 +106,7 @@ Listed in alphabetical order.
   Jan Van Bruggen          `@jvanbrug`_
   Jens Nilsson             `@phiberjenz`_
   Jimmy Gitonga            `@afrowave`_                  @afrowave
+  John Cass                `@jcass77`_                   @cass_john
   Julien Almarcha          `@sladinji`_
   Julio Castillo           `@juliocc`_
   Kaido Kert               `@kaidokert`_
@@ -165,7 +167,7 @@ Listed in alphabetical order.
   Will Farley              `@goldhand`_                 @g01dhand
   William Archinal         `@archinal`_
   Yaroslav Halchenko
-  Denis Bobrov             `@delneg`_       
+  Denis Bobrov             `@delneg`_
 ========================== ============================ ==============
 
 .. _@a7p: https://github.com/a7p
@@ -273,6 +275,8 @@ Listed in alphabetical order.
 .. _@pchiquet: https://github.com/pchiquet
 .. _@delneg: https://github.com/delneg
 .. _@weeliat: https://github.com/weeliat
+.. _@purplediane: https://github.com/purplediane
+
 Special Thanks
 ~~~~~~~~~~~~~~
 
