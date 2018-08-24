@@ -161,6 +161,7 @@ Listed in alphabetical order.
   Travis McNeill           `@Travistock`_               @tavistock_esq
   Vitaly Babiy
   Vivian Guillen           `@viviangb`_
+  Wee Liat                 `@weeliat`_
   Will Farley              `@goldhand`_                 @g01dhand
   William Archinal         `@archinal`_
   Yaroslav Halchenko
@@ -271,6 +272,7 @@ Listed in alphabetical order.
 .. _@afrowave: https://github.com/afrowave
 .. _@pchiquet: https://github.com/pchiquet
 .. _@delneg: https://github.com/delneg
+.. _@weeliat: https://github.com/weeliat
 Special Thanks
 ~~~~~~~~~~~~~~
 
