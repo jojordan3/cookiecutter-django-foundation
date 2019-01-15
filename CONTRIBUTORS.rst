@@ -58,6 +58,7 @@ Listed in alphabetical order.
   Andy Rose
   Anna Callahan            `@jazztpt`_
   Antonia Blair            `@antoniablair`_             @antoniablairart
+  Anuj Bansal              `@ahhda`_
   Arcuri Davide            `@dadokkio`_
   Areski Belaid            `@areski`_
   Ashley Camba
@@ -79,6 +80,7 @@ Listed in alphabetical order.
   Chris Franklin           `@hairychris`_
   Chris Pappalardo         `@ChrisPappalardo`_
   Christopher Clarke       `@chrisdev`_
+  Cole Mackenzie           `@cmackenzie1`_
   Collederas               `@Collederas`_
   Cristian Vargas          `@cdvv7788`_
   Cullen Rhodes            `@c-rhodes`_
@@ -167,6 +169,7 @@ Listed in alphabetical order.
   Tom Atkins               `@knitatoms`_
   Tom Offermann
   Travis McNeill           `@Travistock`_               @tavistock_esq
+  Tubo Shi                 `@Tubo`_
   Umair Ashraf             `@umrashrf`_                 @fabumair
   Vitaly Babiy
   Vivian Guillen           `@viviangb`_
@@ -176,6 +179,7 @@ Listed in alphabetical order.
   Yaroslav Halchenko
   Denis Bobrov             `@delneg`_
   Philipp Matthies         `@canonnervio`_
+  Vadim Iskuchekov         `@Egregors`_                 @egregors
 ========================== ============================ ==============
 
 .. _@a7p: https://github.com/a7p
@@ -206,6 +210,7 @@ Listed in alphabetical order.
 .. _@chrisdev: https://github.com/chrisdev
 .. _@ChrisPappalardo: https://github.com/ChrisPappalardo
 .. _@chuckus: https://github.com/chuckus
+.. _@cmackenzie1: https://github.com/cmackenzie1
 .. _@Collederas: https://github.com/Collederas
 .. _@davitovmasyan: https://github.com/davitovmasyan
 .. _@ddiazpinto: https://github.com/ddiazpinto
@@ -270,6 +275,7 @@ Listed in alphabetical order.
 .. _@timfreund: https://github.com/timfreund
 .. _@Travistock: https://github.com/Tavistock
 .. _@trungdong: https://github.com/trungdong
+.. _@Tubo: https://github.com/tubo
 .. _@viviangb: https://github.com/viviangb
 .. _@xpostudio4: https://github.com/xpostudio4
 .. _@yunti: https://github.com/yunti
@@ -290,6 +296,7 @@ Listed in alphabetical order.
 .. _@weeliat: https://github.com/weeliat
 .. _@purplediane: https://github.com/purplediane
 .. _@umrashrf: https://github.com/umrashrf
+.. _@ahhda: https://github.com/ahhda
 
 Special Thanks
 ~~~~~~~~~~~~~~
